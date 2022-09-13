@@ -8,7 +8,7 @@ public class PetfriendJavaApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(PetfriendJavaApplication.class, args);
-		System.out.println("Hi");
+		logger.log("Hi");
 	}
 
 }
