@@ -17,7 +17,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.pet.entidades.LigacaoFornecedorServico;
 import com.pet.services.LigacaoFornecedorServicoService;
-import com.pet.services.dto.LigacaoFornecedorProdutoDTO;
 import com.pet.services.dto.LigacaoFornecedorServicoDTO;
 
 @Controller
