@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.pet.entidades.LigacaoFornecedorProduto;
 import com.pet.services.LigacaoFornecedorProdutoService;
+import com.pet.services.dto.LigacaoFornecedorProdutoDTO;
 
 @Controller
 @RequestMapping("/")
