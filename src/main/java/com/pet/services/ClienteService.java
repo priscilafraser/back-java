@@ -29,7 +29,7 @@ public class ClienteService {
 		List<Cliente> cliente = repo.findAll();
 		List<ClienteDTO> clienteDTO = new ArrayList();
 		for(Cliente cli: cliente) {
-			clienteDTO.add(new ClienteDTO(cli));    //recebe como construtor o ct
+			clienteDTO.add(new ClienteDTO(cli));
 		}
 		return clienteDTO;	
 	}
