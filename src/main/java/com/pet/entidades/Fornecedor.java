@@ -58,8 +58,6 @@ public class Fornecedor {
 		this.senha = senha;
 	}
 	public Fornecedor() {
-		super();
-		// TODO Auto-generated constructor stub
 	}
 	public Long getId() {
 		return id;
@@ -158,7 +156,7 @@ public class Fornecedor {
 		return createdAt;
 	}
 
-	@PrePersist           //nao recebe Instant, recebe um Instant
+	@PrePersist 
 	public void setCreatedAt() {
 		this.createdAt = Instant.now();
 	}
