@@ -48,7 +48,7 @@ public class ProdutoController {
 	}
 	
 
-	@PostMapping("/produtos")  //
+	@PostMapping("/produtos")  
 	public ResponseEntity<ProdutoDTO> salvarproduto(@RequestBody Produto produto) {
 		ProdutoDTO pr = service.salvar(produto);
 		return ResponseEntity.status(HttpStatus.CREATED).body(pr);
