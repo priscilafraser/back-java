@@ -49,6 +49,6 @@ public class CategoriaDTO {
 		return categoriasDTO;
 	}
 	
-	
+	//.refazendo
 
 }
