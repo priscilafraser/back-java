@@ -67,31 +67,6 @@ public class LigacaoFornecedorProdutoController {
 	public ResponseEntity<List<LigacaoFornecedorProdutoDTO>> consultaProdutosPeloIdFornecedor(@PathVariable("idfornecedor") Long idfornecedor) {
 		return ResponseEntity.ok(service.consultarProdutosPorFornecedor(idfornecedor));
 	}
-	
-	////////////////Imagem S3
-	@Autowired
-    private StorageService serviceImagem;
 
-    @PostMapping("/upload")
-    public ResponseEntity<String> uploadFile(@RequestParam(value = "file") MultipartFile file) {
-        return new ResponseEntity<>(serviceImagem.uploadFile(file), HttpStatus.OK);
-    }
-
-    @GetMapping("/download/{fileName}")
-    public ResponseEntity<ByteArrayResource> downloadFile(@PathVariable String fileName) {
-        byte[] data = serviceImagem.downloadFile(fileName);
-        ByteArrayResource resource = new ByteArrayResource(data);
-        return ResponseEntity
-                .ok()
-                .contentLength(data.length)
-                .header("Content-type", "application/octet-stream")
-                .header("Content-disposition", "attachment; filename=\"" + fileName + "\"")
-                .body(resource);
-    }
-
-    @DeleteMapping("/delete/{fileName}")
-    public ResponseEntity<String> deleteFile(@PathVariable String fileName) {
-        return new ResponseEntity<>(serviceImagem.deleteFile(fileName), HttpStatus.OK);
-    }
 
 }
