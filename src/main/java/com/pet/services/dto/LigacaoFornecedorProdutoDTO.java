@@ -6,7 +6,6 @@ import java.util.List;
 import com.pet.entidades.Categoria;
 import com.pet.entidades.Fornecedor;
 import com.pet.entidades.LigacaoFornecedorProduto;
-import com.pet.entidades.Storage;
 import com.pet.entidades.TipoProduto;
 
 public class LigacaoFornecedorProdutoDTO {
