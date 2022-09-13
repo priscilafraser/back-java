@@ -20,7 +20,7 @@ import com.pet.entidades.Categoria;
 import com.pet.services.CategoriaService;
 import com.pet.services.dto.CategoriaDTO;
 
-@RestController    //para mvc
+@RestController    
 @RequestMapping("/")
 @CrossOrigin(origins = "*")
 public class CategoriaController {
