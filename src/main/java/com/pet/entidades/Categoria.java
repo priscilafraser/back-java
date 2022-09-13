@@ -16,9 +16,6 @@ public class Categoria {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	//@NotBlank
-	//@NotNull(message = "O campo é obrigatório")                          //
-	//@Pattern(regexp = "/\\b[A-Za-zÀ-ú][A-Za-zÀ-ú]+,?\\s[A-Za-zÀ-ú][A-Za-zÀ-ú]{2,19}\\b/gi")
 	private String categoria;
 	
 	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
@@ -39,7 +36,7 @@ public class Categoria {
 		return createdAt;
 	}
 
-	@PrePersist           //nao recebe Instant, recebe um Instant
+	@PrePersist
 	public void setCreatedAt() {
 		this.createdAt = Instant.now();
 	}
@@ -69,11 +66,6 @@ public class Categoria {
 
 	}
 
-	@Override
-	public String toString() {
-		return "Categoria [id=" + id + ", categoria=" + categoria + "]";
-	}
-	
 	
 
 }
