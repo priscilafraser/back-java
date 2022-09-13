@@ -63,7 +63,6 @@ public class Cliente {
 
 	
 	public Cliente() {
-		// TODO Auto-generated constructor stub
 	}
 	
 	public Instant getUpdateAt() {
@@ -78,7 +77,7 @@ public class Cliente {
 		return createdAt;
 	}
 
-	@PrePersist           //nao recebe Instant, recebe um Instant
+	@PrePersist 
 	public void setCreatedAt() {
 		this.createdAt = Instant.now();
 	}
