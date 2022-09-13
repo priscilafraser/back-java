@@ -7,5 +7,6 @@ import com.pet.entidades.Categoria;
 
 @Repository
 public interface CategoriaRepository extends JpaRepository<Categoria,Long> {
+	//testando
 
 }
