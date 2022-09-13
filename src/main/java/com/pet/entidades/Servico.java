@@ -93,11 +93,5 @@ public class Servico {
 		
 	}
 
-	@Override
-	public String toString() {
-		return "Servico [id=" + id + ", servicos=" + servicos + ", tipoServico=" + tipoServico + ", categoria="
-				+ categoria + "]";
-	}
-	
 	
 }
