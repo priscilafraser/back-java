@@ -42,7 +42,7 @@ public class ServicoController {
 
 	@PostMapping("/servico")
 	public ResponseEntity<ServicoDTO> salvarServico(@RequestBody Servico servico) {
-	System.out.println(servico.toString());
+	logger.log(servico.toString());
 		ServicoDTO sv = service.salvar(servico);
 		return ResponseEntity.status(HttpStatus.CREATED).body(sv);
 	}
