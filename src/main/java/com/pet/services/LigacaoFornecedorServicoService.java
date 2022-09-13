@@ -11,7 +11,6 @@ import org.springframework.stereotype.Service;
 
 import com.pet.entidades.LigacaoFornecedorServico;
 import com.pet.repository.LigacaoFornecedorServicoRepository;
-import com.pet.services.dto.LigacaoFornecedorProdutoDTO;
 import com.pet.services.dto.LigacaoFornecedorServicoDTO;
 
 @Service
